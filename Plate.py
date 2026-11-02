@@ -1,6 +1,6 @@
 import math
 
-def plate_mass(length_mm, width_mm, thickness_mm, hole_diameter_mm, density_g_cm3=2.70):
+def plate_mass(length_mm, width_mm, thickness_mm, hole_diameter_mm, density_g_cm3=7.85):
     plate_volume = length_mm * width_mm * thickness_mm
     hole_volume = math.pi * (hole_diameter_mm / 2) ** 2 * thickness_mm
     volume_cm3 = (plate_volume - hole_volume) / 1000
