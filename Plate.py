@@ -12,7 +12,7 @@ print(round(plate_mass(200, 100, 5, 30, 2.75), 4))
 
 def cylinder_mass(diameter_mm, length_mm, density_g_cm3=7.85):
     radius_mm =  diameter_mm / 2
-    volume_mm3 = math.pi * radius_mm * length_mm
+    volume_mm3 = math.pi * radius_mm ** 2 * length_mm
     volume_cm3 = volume_mm3 / 1000
     return volume_cm3 * density_g_cm3 / 1000
 
