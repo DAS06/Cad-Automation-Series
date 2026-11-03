@@ -35,7 +35,7 @@ print(round(cylinder_mass(20, 100), 3))              # 0.247 kg (steel rod)
 ## Run it
 
 ```bash
-python3 plate.py
+python3 day-01/plate.py
 ```
 
 ## What I learned
