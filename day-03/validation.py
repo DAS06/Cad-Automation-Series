@@ -19,7 +19,7 @@ def cylinder_mass(diameter_mm, length_mm, density_g_cm3=7.85):
 
 # Tests: these fail loudly if a result is wrong
 assert round(plate_mass(100, 50, 10, 20), 3) == 0.368 #Steel
-# Task-1 for aluminium density =2.70
+# Task-1 testing aluminium density =2.70
 assert round(plate_mass(100, 50, 10, 20, 2.70), 3) == 0.127 #Aluminium
 assert round(cylinder_mass(20, 100), 3) == 0.247
 print("All tests passed")
@@ -34,7 +34,7 @@ try:
     plate_mass(100, 50, -2, 60)
 except ValueError as e:
     print("Caught error:", e)
-
+# Task-3 testing -ve density
 try:
     cylinder_mass(20, 100, -1)
 except ValueError as e:
