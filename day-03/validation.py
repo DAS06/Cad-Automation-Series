@@ -11,7 +11,7 @@ def plate_mass(length_mm, width_mm, thickness_mm, hole_diameter_mm, density_g_cm
 
 def cylinder_mass(diameter_mm, length_mm, density_g_cm3=7.85):
     if diameter_mm <= 0 or length_mm <= 0:
-        raise ValueError("dimensions must be positive")
+        raise ValueError("Dimensions must be positive")
     if density_g_cm3 <=0:
         raise ValueError("Density must be positive")
     radius_mm = diameter_mm / 2
@@ -31,7 +31,7 @@ except ValueError as e:
     print("Caught error:", e)
 # Task-2 testing -ve thickness
 try:
-    plate_mass(100, 50, -2, 60)
+    plate_mass(100, 50, -2, 20)
 except ValueError as e:
     print("Caught error:", e)
 # Task-3 testing -ve density
